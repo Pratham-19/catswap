@@ -311,9 +311,20 @@ border-radius: 10px;
   .dropdown:hover .dropbtn {background-color: #2852e2;}
 
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 1000px) {
     
     #cat{
-        background-position-y: -92%;
+        display: none;
+        /* background-position-y: -92%; */
+    }
+    .box{
+        top: 30%;
+        width: 80vw;
+    }
+    *{
+        font-size: 25px;
+    }
+    nav ul{
+        float: right;
     }
   }
