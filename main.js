@@ -201,6 +201,7 @@ async function trySwap() {
     document.getElementById('upper-item-img').src="assets/polygon.png";
     chain="polygon";
     document.getElementById("token-list").innerHTML="";
+    document.getElementById("lower-item-drop").style.display="none";
     listTokens("polygon");
   }
   function bsc(){
@@ -209,6 +210,7 @@ async function trySwap() {
     document.getElementById('poly').style.display="flex";
     document.getElementById('upper-item').innerText=" Binance Chain";
     document.getElementById('upper-item-img').src="assets/bsc.png";
+    document.getElementById("lower-item-drop").style.display="none";
     chain="bsc";
     document.getElementById("token-list").innerHTML="";
     listTokens("bsc");
@@ -219,9 +221,13 @@ async function trySwap() {
     document.getElementById('poly').style.display="flex";
     document.getElementById('upper-item').innerText=" Ethereum";
     document.getElementById('upper-item-img').src="assets/ethereum.png";
+    document.getElementById("lower-item-drop").style.display="none";
     chain="eth";
     document.getElementById("token-list").innerHTML="";
      listTokens("eth");
+  }
+  function showDrop(){
+    document.getElementById("lower-item-drop").style.display="block"
   }
   init();
   document.getElementById("primary-token").onclick=(()=>showToken("From"));
@@ -232,6 +238,7 @@ async function trySwap() {
   document.getElementById("eth").onclick=eth;
   document.getElementById("From-amount").onblur=getQuote;
   document.getElementById("submit-btn").onclick=trySwap;
+  document.getElementById("click-dropdown").onclick=showDrop;
   document.getElementById("login-btn").onmouseover=showFullAddress;
   document.getElementById("From-amount").addEventListener('keyup', function () {
     clearTimeout(type_timer);

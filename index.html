@@ -20,14 +20,14 @@
             <ul>
               <li>
                 <div class="dropdown">
-                  <button class="dropbtn" ><i><img src="assets/ethereum.png" class="icon" alt="" id="upper-item-img"></i><span id="upper-item"> Ethereum</span></button>
+                  <button class="dropbtn" id="click-dropdown"><i><img src="assets/ethereum.png" class="icon" alt="" id="upper-item-img"></i><span id="upper-item"> Ethereum</span></button>
                   <div class="dropdown-content" id="lower-item-drop">
                  
-                    <button href="#" id="poly"><i><img class="icon" src="assets/polygon.png" alt="" id="poly-img"></i><span>Polygon</span></button>
-                    <button href="#" id="bsc"><i><img src="assets/bsc.png" class="icon" alt="" id="bsc-img"></i><span>Binance Smart Chain</span></button>
-                    <button href="#" id="eth"><i><img src="assets/ethereum.png" class="icon" alt="" id="eth-img upper-item-img"></i> <span>Ethereum</span></button>
+                    <button id="poly"><i><img class="icon" src="assets/polygon.png" alt="" id="poly-img"></i><span>Polygon</span></button>
+                    <button id="bsc"><i><img src="assets/bsc.png" class="icon" alt="" id="bsc-img"></i><span>Binance Smart Chain</span></button>
+                    <button  id="eth"><i><img src="assets/ethereum.png" class="icon" alt="" id="eth-img upper-item-img"></i> <span>Ethereum</span></button>
                   </div>
-                  </div>
+                </div>
             </li>
                 <li  onmouseenter="showFullAddress"><div id="login-btn" class="dropbtn">Connect Wallet</div></li>
             </ul>
@@ -50,7 +50,6 @@
                 </div>
                 <input type="number" name="Amt" placeholder="0.0" id="From-amount" min="0">
             </div>
-            <!-- <div class="arrow">⇅</div> -->
             <div class="swap-box">
                 <div class="token-select" id="secondary-token">
                     <img src="assets/ad.png" alt="token-logo" id="secondary-token-img" >
@@ -58,10 +57,14 @@
                 </div>
                 <input type="number" name="TAmt" placeholder="0.0" id="To-amount" min="0">
             </div>
-            <div id ="est-gas"><img src="assets/gas-pump.png" id="gas"></img> <span id="estimated-gas"></span></div>
-            <div class="submit">
+          <div id ="est-gas">
+            <img src="assets/gas-pump.png" id="gas"></img>
+             <span id="estimated-gas">
+             </span>
+          </div>
+          <div class="submit">
                 <button type="submit" disabled id="submit-btn">Connect wallet</button>
-            </div>
+          </div>
         </div>
         <div class="modal" tabindex="-1" id="all-tokens">
             <div class="modal-dialog modal-color" >
@@ -80,8 +83,6 @@
           </div>
     </div>
   </div>
-  
     <script type="text/javascript" src="./main.js"></script>
-    
   </body>
 </html>
