@@ -1,0 +1,319 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#0f0e13;
+    background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+overflow: hidden;
+    font-family: 'Poppins', sans-serif; 
+}
+#cont{
+width: 100%;
+height: 100vh;
+/* background-color: #000; */
+}
+#eth{
+    display: none;;
+}
+nav{
+    /* bac */
+    display:flex;
+    justify-content: space-around;
+    color: #fff;
+    padding-top: 10px;
+}
+ul li{
+    display: inline-block;
+    padding: 10px ;
+    height: 8vh;
+    margin: 20px 10px; 
+}
+.logo {
+    flex-basis: 50%;
+}
+.logo img{
+    width: 7.8vw;
+}
+#cat{
+    background-repeat: no-repeat;
+    background-size: 250px 150px;
+    background-position-x: center;
+    background-image: url("assets/cat.png");
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position:absolute;
+    top: 24%;
+}
+#select{
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+#est-gas{
+    background-color:  #16171d;
+    padding: 5px;
+    width :max-content;
+    border-radius: 15px;
+    color: #fff;
+    margin: 5px;
+}
+.modal-header{
+    display: flex;
+    flex-direction: column;
+}
+.eye {
+    z-index: 4;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    height: 47px;
+    width: 47px;
+    border: 4px solid black;
+    margin: 0 7px;
+    top: 68px;
+    /* left: 705px; */
+    left: 46%;
+    background: #feed01;
+  }
+  .eye:after { /*pupil*/
+    position: absolute;
+    bottom: 17px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background: #000;
+    border-radius: 50%;
+    content: " ";
+  }
+
+.modal-color{
+    /* background: rgb(39, 51, 89, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color:#16171d;
+    color: #fff;
+}
+#lowerbody{
+    position: relative;
+}
+
+.box{
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform: translateX(-50%);
+    width: 29vw;
+    border: 2px solid rgba(184, 181, 181, 0.138);
+    background: rgba(184, 181, 181, 0.138);
+    border-radius: 20px;
+    color: #fff;
+}
+.box h4{
+    text-align: center;
+    padding: 5px;
+}
+.swap-box{
+    display: flex;
+    /* width: max-content; */
+    flex-direction: row;
+    text-align: center;
+    background-color:  #16171d;
+    margin: 10px 5px;
+    border-radius: 20px;
+    padding: 10px 5px;
+}
+
+.swap-box input{
+    flex-basis: 99%;
+    width: 100%;
+    text-align: right;
+    margin: auto 5px;
+    background:#16171d ;
+    color: #fff;
+    font-size: 20px;
+  height: 7vh;
+   border-radius: 10px; 
+ } 
+ 
+.token-select:hover{
+    background-color: rgba(184, 181, 181, 0.138);
+    cursor: pointer;
+}
+.token-select{
+    height: 9vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#primary-token-img{
+    flex-basis: 30%;
+    width: 60px;
+    margin: 5px;
+
+}
+#primary-token-name{
+    /* flex-basis: 30%; */
+    margin: auto;
+    /* width: 60px; */
+    font-size: 20px;
+}
+.icon{
+    margin-left: 5px;
+    width: 40px;
+}
+#secondary-token-img{
+    flex-basis: 30%;
+    width: 60px;
+    /* height: 60px; */
+    margin: 5px;
+
+}
+#secondary-token-name{
+    margin: auto;
+    font-size: 20px;
+}
+#close-token-list{
+    cursor: pointer;
+ font-size: 20px;
+}
+#token-list{
+    height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#token-img{
+    width: 40px;
+    margin:10px 5px;
+    /* border-bottom: solid black 2px */
+}
+.token-row{
+    /* border: solid black 2px; */
+    background-color: rgba(184, 181, 181, 0.138);
+    border-radius: 10px;
+    margin:7px 0;
+}
+.token-row:hover{
+    background-color: #feed01;
+    color: #000;
+    cursor: pointer;
+}
+#search-list{
+    margin: 10px 5px;
+    padding:10px 5px ;
+    border-radius:10px ;
+    font-size: 20px;
+}
+#gas{
+    width: 30px;
+    height: 26px;
+    color: #fff;
+    margin:5px;
+}
+#submit-btn{
+    width: 95%;
+    height: 5vh;
+    margin: 5px auto;
+    border-radius: 10px;
+    background-color: #feed01;
+    cursor: pointer;
+    /* color:#16171d; */
+}
+.submit{
+    text-align: center;
+}
+#login-btn{
+    /* position: relative; */
+    /* height: 80px; */
+    padding: 17px 10px;
+    cursor: pointer;
+    /* border-radius: 9px; */
+    /* border: 2px solid rgba(184, 181, 181, 0.138); */
+	/* background: rgba(184, 181, 181, 0.138); */
+    /* color: white; */
+    font-size: 17px;
+}
+#login-btn:hover{
+    /* border: 2px solid rgba(6, 6, 6, 0.138); */
+	background: #2852e2;
+    /* color: rgb(0, 0, 0); */
+}
+
+/* Dropdown Button */
+.dropbtn {
+    /* height: 8vh; */
+    border-radius: 9px;
+    border: 2px solid rgba(184, 181, 181, 0.138);
+	background: rgba(184, 181, 181, 0.138);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(184, 181, 181, 0.138);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content button {
+width: 100%;
+border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background: rgba(184, 181, 181, 0.138);
+    margin: 5px 0;
+    padding: 10px 7px;
+    border: 2px solid rgba(184, 181, 181, 0.138);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+  }
+  .dropdown-content button span {
+/* width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(184, 181, 181, 0.138); */
+    margin: auto ;
+    /* padding: 10px 7px;
+    border: 2px solid rgba(184, 181, 181, 0.138);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px; */
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content button:hover {background-color: #2852e2;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #2852e2;}
+
+
+  @media only screen and (max-width: 500px) {
+    
+    #cat{
+        background-position-y: -92%;
+    }
+  }
